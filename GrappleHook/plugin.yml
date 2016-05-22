@@ -1,0 +1,18 @@
+name: GrappleHook
+main: me.Async.GH.Main
+author: Async
+version: 0.1
+description: Adds an item that allows you to climb up walls!
+commands:
+    grapplehook:
+        aliases: [gh]
+        description: Main command for GrappleHook
+        permission: grapplehook.spawn
+permissions:
+    grapplehook.*:
+        default: false
+        description: Gives all permissions of GrappleHook to the player
+        child: grapplehook.spawn
+    grapplehook.spawn:
+        default: false
+        description: Gives permission to spawn a grapplehook to the player
